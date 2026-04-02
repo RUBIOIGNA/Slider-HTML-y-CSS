@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> /*es una instruccion que informa al browser la version de lenguaje*/
 <html lang="es">
 
-<head>
+<head>/*sirve como contenerdor de otros tags que ayudan a definir y administrar los contenidos del documento*/
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Slider con HTML y CSS</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Ejemplo de Slider con HTML y CSS</title>/*provee una descripcion del contenido de la pagina*/
+    <link rel="stylesheet" type="text/css" href="styles.css"/>/*, href: especifica la url de un objetivo destino*/
 </head>
 
 <body>
@@ -14,20 +14,36 @@
     <div id="item-slider">
 
         <ul class="slider">
-            <li id="slide1">
+            <li id="slide0">
                 <h1>Hola Programadores</h1>
-                <img src="./img/car.jpg" />
+                <img src="imagen/gamer.jpg" />
+            </li>
+            <li id="slide1">
+                <h1>Sistemas Oprativos</h1>
+                <img src="imagen/so.jpg" />
             </li>
             <li id="slide2">
-                <img src="./img/sunset.jpg" />
+                <h1>Linux</h1>
+                <img src="imagen/linux.jpg" />
             </li>
             <li id="slide3">
-                <h1>Ejemplo con otros elementos</h1>
-                <p> se ouede colocar otra imagen</p>
+                <h1>Windows</h1>
+                <img src="imagen/windows.jpg">
+            </li>
+             <li id="slide4">
+                <h1>mac</h1>
+                <img src="imagen/mac.jpg">
+            </li>
+             <li id="slide5">
+                <h1>android</h1>
+                <img src="imagen/a2.jpg">
             </li>
         </ul>
 
         <ul class="menu">
+            <li>
+                <a href="#slide0">0</a>
+            </li>
             <li>
                 <a href="#slide1">1</a>
             </li>
@@ -36,6 +52,12 @@
             </li>
             <li>
                 <a href="#slide3">3</a>
+            </li>
+             <li>
+                <a href="#slide4">4</a>
+            </li>
+            <li>
+                <a href="#slide5">4</a>
             </li>
         </ul>
 
