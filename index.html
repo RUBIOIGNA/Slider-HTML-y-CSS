@@ -1,72 +1,83 @@
-<!DOCTYPE html> /*es una instruccion que informa al browser la version de lenguaje*/
-<html lang="es">
+<!DOCTYPE html> <!-- es una instruccion que informa al browser la version de lenguaje la cual seria en este documento html-->
+<html lang="es"> <!--lang=es es un codifo de lengaje -->
 
-<head>/*sirve como contenerdor de otros tags que ayudan a definir y administrar los contenidos del documento*/
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Slider con HTML y CSS</title>/*provee una descripcion del contenido de la pagina*/
-    <link rel="stylesheet" type="text/css" href="styles.css"/>/*, href: especifica la url de un objetivo destino*/
+<head> <!-- sirve como contenerdor de otros tags que ayudan a definir y administrar los contenidos del documento-->
+    <meta charset="UTF-8"> <!--define que el documento va con la codigficacion de caracteres utf8 permitiendo el uso de tildes,ñ y simbolos sin salte como errores--->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--establece que use el modo mas actualizado de internet explore el cual seria edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configura la viista en los celulares ajustando el ancho y establecer el zoom inicial-->
+    <title>Ejemplo de Slider con HTML y CSS</title> <!--provee una descripcion del contenido de la pagina-->
+    <link rel="stylesheet" type="text/css" href="styles.css"/><!-- href: especifica la url de un objetivo destino-->
 </head>
 
-<body>
+<body><!-- engloba todo el contenido que veras en la pagina-->
 
-    <div id="item-slider">
+    <div id="item-slider"><!--contenedor pricipal del slider con su id que lo unico en el documento-->
 
-        <ul class="slider">
-            <li id="slide0">
-                <h1>Hola Programadores</h1>
-                <img src="imagen/gamer.jpg" />
+        <ul class="slider"> <!--ul se usa una lista desordenada como estructura base y se crea una clase con el nombre slider permite aplicarle diferentes estilos-->
+            <li id="slide0"> <!--cada li representa diapositiva individual, el id slider0 sirve para identificar esta diapositiva-->
+                <h1>Hola Programadores</h1> <!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/gamer.jpg" /> <!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
-            <li id="slide1">
-                <h1>Sistemas Oprativos</h1>
-                <img src="imagen/so.jpg" />
+
+            <li id="slide1"><!--cada li representa diapositiva individual, el id slide1 sirve para identificar esta diapositiva-->
+                <h1>Sistemas Oprativos</h1><!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/so.jpg" /><!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
-            <li id="slide2">
-                <h1>Linux</h1>
-                <img src="imagen/linux.jpg" />
+
+            <li id="slide2"><!--cada li representa diapositiva individual, el id slide2 sirve para identificar esta diapositiva-->
+                <h1>Linux</h1><!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/linux.jpg" /><!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
-            <li id="slide3">
-                <h1>Windows</h1>
-                <img src="imagen/windows.jpg">
+
+            <li id="slide3"><!--cada li representa diapositiva individual, el id slide3 sirve para identificar esta diapositiva-->
+                <h1>Windows</h1><!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/windows.jpg"><!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
-             <li id="slide4">
-                <h1>mac</h1>
-                <img src="imagen/mac.jpg">
+
+             <li id="slide4"><!--cada li representa diapositiva individual, el id slide4 sirve para identificar esta diapositiva-->
+                <h1>mac</h1><!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/mac.jpg"><!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
-             <li id="slide5">
-                <h1>android</h1>
-                <img src="imagen/a2.jpg">
+
+             <li id="slide5"><!--cada li representa diapositiva individual, el id slide5 sirve para identificar esta diapositiva-->
+                <h1>android</h1><!--el h1 se utiliza como titulo principal de la diapositiva-->
+                <img src="imagen/a2.jpg"><!--src indica la ruta en la cual se encuentra la imagen dentro del proyecto-->
             </li>
+
         </ul>
 
-        <ul class="menu">
-            <li>
-                <a href="#slide0">0</a>
+        <ul class="menu"> <!--ul se usa una lista desordenada como estructura base y se crea una clase con el nombre menu permite aplicarle diferentes estilos-->
+            <li><!--cada li representa diapositiva individual-->
+                <a href="#slide0">0</a> <!--a se suele utilizar como boton de navegacion, href=#slide0 corresponde al id slider0 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
-            <li>
-                <a href="#slide1">1</a>
+
+            <li><!--cada li representa diapositiva individual-->
+                <a href="#slide1">1</a><!--a se suele utilizar como boton de navegacion, href=#slide1 corresponde al id slider1 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
-            <li>
-                <a href="#slide2">2</a>
+
+            <li><!--cada li representa diapositiva individual-->
+                <a href="#slide2">2</a><!--a se suele utilizar como boton de navegacion, href=#slide2 corresponde al id slider2 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
-            <li>
-                <a href="#slide3">3</a>
+
+            <li><!--cada li representa diapositiva individual-->
+                <a href="#slide3">3</a><!--a se suele utilizar como boton de navegacion, href=#slide3 corresponde al id slider3 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
-             <li>
-                <a href="#slide4">4</a>
+
+             <li><!--cada li representa diapositiva individual-->
+                <a href="#slide4">4</a><!--a se suele utilizar como boton de navegacion, href=#slide4 corresponde al id slider4 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
-            <li>
-                <a href="#slide5">4</a>
+
+            <li><!--cada li representa diapositiva individual-->
+                <a href="#slide5">5</a><!--a se suele utilizar como boton de navegacion, href=#slide5 corresponde al id slider5 cuando se da click el navegador se desplaza directamente hasta ese elemento-->
             </li>
         </ul>
 
     </div>
 
-    <div style="display: none;">
-       <P>Presentación</P>
+    <div style="display: none;"><!-- el elemento utiliza el estilo display: none que elimina completamente el flujo del documento-->
+       <P>Presentación</P><!--p se utiliza para agregar texto -->
     </div>
 
-</body>
+ </body>
 
 </html>

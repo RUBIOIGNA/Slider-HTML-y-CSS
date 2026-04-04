@@ -1,85 +1,85 @@
-body {
-    background-color: rgb(62, 198, 207);
-}
+body { 
+    background-color: rgba(19, 68, 175, 0.981);
+}/*define el color del fondo de la pagina**/ 
 
 #item-slider {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: rgb(247, 250, 249);
-    max-width: 800px;
-    width: 100%;
-    padding: 30px;
+    font-family: sans-serif; /*define la tipografia predeterminada*/
+    margin: auto;/*centra el contenedor*/
+    background-color: rgb(247, 250, 249);/*establece el color del fondo que va a tener el contenedor*/
+    max-width: 800px; /*define el ancho maximo del contenedor*/
+    width: 100%;/*permite que utilize todo el ancho disponible*/
+    padding: 30px;/*añade un espaciointerno en todos los lados*/
     box-sizing: border-box;
+}/*son las caracteristicas que va a tener el contenedor*/
+
+#item-slider>ul,/*selecciona cualquier ul que pertenezca a item-slider*/
+li { /*selecciona todos los li que esten en el documento*/
+    padding: 0;/*quita el relleno interno*/
+    margin: 0;/*quita todos margenes*/
+    list-style: none; /*elemina los numeros de las listas o viñetas*/
 }
 
-#item-slider>ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+#item-slider>ul.slider { /*selecciona ul que esten en slider que esten en item-slider*/
+    position: relative; /*permite que elementos se posicionen dentro del cotenedor*/
+    max-width: 850px;/*limite del ancho maximo*/
+    width: 100%;/*permite que se ajuste segun el ancho permitido*/
+    height: 450px;/*permite ajustar la altura del slider*/
 }
 
-#item-slider>ul.slider {
-    position: relative;
-    max-width: 850px;
-    width: 100%;
-    height: 450px;
+#item-slider>ul.slider h1 { /*sn las caracteristicas que tendria cada h1 que este dentro de slider*/
+    position: absolute; /*permite que el texto este sobre la imagen*/
+    background-color: rgba(255, 255, 255, 0.6);/*selecciona el color para el fondo*/
+    padding: 15px;/*seria el espacio interno del texto*/
+    left: 51%;/*coloca el elemento ligereamente a al derecha*/
+    top: 411px;/*posiciona el texto hacia la parte baja del slider*/
+    transform: translate(-50%, -50%);/*centra el elemento*/
 }
 
-#item-slider>ul.slider h1 {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 15px;
-    left: 51%;
-    top: 411px;
-    transform: translate(-50%, -50%);
+#item-slider>ul.slider li {/*selecciona cada li*/
+    position: absolute;/*permite que los slider esten uno arrbia de otro*/
+    left: 0px;/*cada slider alineado a la izquierda*/
+    top: 0px;/*cada slider alineado arriba del contenedor*/
+    opacity: 0;/*oculta el slider inicialmente*/
+    width: inherit;/*todos con el mismo ancho que tiene ul*/
+    height: inherit;/*misma altura que tiene el contenedor*/
+    transition: opacity .5s;/*efecto de desvanecido al aparecer y desaparecer*/
+    background: #fff; /*define el color del fondo*/
 }
 
-#item-slider>ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background: #fff;
+#item-slider>ul.slider li img { /*selecciona cada imagen que esten dentro del contenedor*/
+    width: 100%;/*expande la imagen al ancho permitido*/
+    height: 400px;/*fija la altura de la imagen*/
+    object-fit: cover;/*recorta la imagen para que llene el espacio designado*/
 }
 
-#item-slider>ul.slider li img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+#item-slider>ul.slider li:first-child { /*selecciona el primero*/
+    opacity: 1;/*Mostramos el primer <li>*/
+    
 }
 
-#item-slider>ul.slider li:first-child {
+#item-slider>ul.slider li:target { /*Mostramos el <li> del enlace que pulsemos*/
     opacity: 1;
-    /*Mostramos el primer <li>*/
+    
 }
 
-#item-slider>ul.slider li:target {
-    opacity: 1;
-    /*Mostramos el <li> del enlace que pulsemos*/
+#item-slider>.menu { /*selecciona el menu del slider*/
+    text-align: center; /*centra los botones del menu*/
+    margin: 20px;/*añade espacio alrededor de los botones*/
 }
 
-#item-slider>.menu {
-    text-align: center;
-    margin: 20px;
+#item-slider>.menu li { /*selecciona cada boton del menu*/
+    display: inline-block;/*coloca los botones en linea*/
+    text-align: center;/*centra el contenido que esta dentro del boton*/
 }
 
-#item-slider>.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-#item-slider>.menu li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: rgb(2, 10, 10);
-    padding: 20px;
-    width: 15px;
-    height: 20px;
-    font-size: 23px;
-    border-radius: 100%;
+#item-slider>.menu li a { /*caracteristicas del boton*/
+    display: inline-block;/* se le da una dimensiones personalizadas*/
+    color: white;/*define el color de los numeros */
+    text-decoration: none;/*elimina el subrayado al ser un enlace*/
+    background-color: rgb(2, 10, 10);/*define el color del fondo de los botones*/
+    padding: 20px;/*espacio dentro del boton*/
+    width: 15px;/*define el ancho que va a tener el circulo*/
+    height: 20px;/*es la altura que va a tener el boton*/
+    font-size: 23px;/*tamaño del numero dentro del boton*/
+    border-radius: 100%; /*convierte el boton en un circulo perfecto*/
 }
